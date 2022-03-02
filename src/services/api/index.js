@@ -3,10 +3,12 @@ const VERSION = process.env.NEXT_PUBLIC_API_VERSION;
 
 const endPoints = {
   auth: {
-    login: `${API}/auth/${VERSION}/auth/login`,
-    profile: `${API}/auth/${VERSION}/auth/profile`,
+    login: `${API}/api/${VERSION}/auth/login`,
+    profile: `${API}/api/${VERSION}/auth/profile`,
   },
   products: {
-    getProducts: (id) => `${API}/products/${VERSION}/products/${id}`,
+    getProducts: (id) => `${API}/api/${VERSION}/products/${id}`,
   },
 };
+
+export default endPoints;
